@@ -1,5 +1,5 @@
 {% set name = "invert4geom" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/invert4geom-{{ version }}.tar.gz
-  sha256: 33f37222ef673f1512658458838301170a2e039ce31f31be0115247e4206ef09
+  sha256: 9ec1be6dd8835d98f5f476fe90d0361e593cbbc7a03f5b02c08406a2d7b63722
 
 build:
   noarch: python
