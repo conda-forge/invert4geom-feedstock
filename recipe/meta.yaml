@@ -1,5 +1,5 @@
 {% set name = "invert4geom" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/invert4geom-{{ version }}.tar.gz
-  sha256: 9ec1be6dd8835d98f5f476fe90d0361e593cbbc7a03f5b02c08406a2d7b63722
+  sha256: a25d08238dfd9a66475c2133c9871e198d23c078213afbf1f105dd45cd45e728
 
 build:
   noarch: python
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - setuptools >=64
     - pip
   run:
-    - python >=3.8
+    - python >=3.9
     - numpy
     - pandas
     - xarray
@@ -29,7 +29,7 @@ requirements:
     - pykdtree
     - xrft >=1.0
     - harmonica >=0.6.0
-    - antarctic-plots >=0.0.6
+    - polartoolkit
     - numba
     - scipy
     - nptyping
