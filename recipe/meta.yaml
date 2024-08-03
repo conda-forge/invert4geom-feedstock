@@ -1,5 +1,5 @@
 {% set name = "invert4geom" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/invert4geom-{{ version }}.tar.gz
-  sha256: 5088e66a6eefe56d1883d76fa6b27398138de2ba643903e77f977c7819f668e5
+  sha256: cedf26ae12b08e52630b334e7d6ea1e764ad50149c123b4129bf40510c5c6e70
 
 build:
   noarch: python
@@ -32,12 +32,25 @@ requirements:
     - polartoolkit
     - numba
     - scipy
-    - nptyping
     - numba-progress
     - tqdm
     - pygmt
     - dask-core
-
+    - deprecation
+    - nptyping
+    - optuna >=3.1.0
+    - optuna-integration
+    - botorch >=0.4.0
+    - joblib
+    - psutil
+    - pyvista
+    - trame
+    - ipywidgets
+    - matplotlib-base
+    - seaborn
+    - ipython
+    - plotly
+    - uqpy
 test:
   imports:
     - invert4geom
