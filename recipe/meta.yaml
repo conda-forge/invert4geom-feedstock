@@ -46,7 +46,7 @@ requirements:
     - pyvista
     - trame
     - ipywidgets
-    - matplotlib
+    - matplotlib-base
     - seaborn
     - ipython
     - plotly
