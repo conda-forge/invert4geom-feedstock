@@ -37,6 +37,8 @@ requirements:
     - pygmt
     - dask-core
     - deprecation
+    - pooch
+    - scikit-learn
     - optuna >=3.1.0
     - optuna-integration
     - botorch >=0.4.0
