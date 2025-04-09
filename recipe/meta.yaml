@@ -41,7 +41,7 @@ requirements:
     - pooch
     - scikit-learn
     - optuna >=3.6
-    - torch
+    - pytorch
     - joblib
     - psutil
     - pyvista
