@@ -44,7 +44,7 @@ requirements:
     # optimization
     - optuna >=4.0 
     - pytorch 
-    - nomkl # [unix]
+    - nomkl  # [unix]
     - joblib
     - psutil
     # visualization
