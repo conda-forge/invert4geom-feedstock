@@ -1,6 +1,5 @@
 {% set name = "invert4geom" %}
 {% set version = "1.1.0" %}
-{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -17,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python
     - hatchling
     - hatch-vcs
     - pip
   run:
-    - python >={{ python_min }}
+    - python
     # Required dependencies
     - numpy >=1.25.0
     - pandas >=2.0.0
