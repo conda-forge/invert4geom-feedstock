@@ -1,5 +1,5 @@
 {% set name = "invert4geom" %}
-{% set version = "1.1.0" %}
+{% set version = "2.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/invert4geom-{{ version }}.tar.gz
-  sha256: b108c4be92b265136ba7dd00511ef6020ed1d4e170567c95a75307978c820c0f
+  sha256: 0c20f951b12e262b4218b9e0d14c88dc013f23f25e55c2564500d9f68f070ce6
 
 build:
   skip: True  # [py<311]
@@ -27,8 +27,9 @@ requirements:
     - pandas >=2.0.0
     - xarray >=2023.4.0
     - scipy >=1.11.0
-    - scikit-learn >=1.3.0
+    - scikit-learn >=1.3.0,<1.8.0
     - verde
+    - boule
     - pooch
     - rioxarray
     - tqdm
@@ -37,23 +38,22 @@ requirements:
     - deprecation
     - pykdtree
     - xrft
-    - polartoolkit
+    - polartoolkit >=1.5.0
     - numba
     - numba-progress
     - dask
     # optimization
     - optuna >=4.0 
     - pytorch 
-    - nomkl  # [unix]
     - joblib
     - psutil
     # visualization
     - pyvista
     - trame
     - ipywidgets
-    - matplotlib
+    - matplotlib >=3.7.0
     - seaborn
-    - ipython
+    - ipython >=8.13.0
     - plotly
 test:
   imports:
